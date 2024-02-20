@@ -7,9 +7,12 @@
 <body>
     <h1>四則演算</h1>
     <p>(足し算 : +, 引き算 : -, 掛け算: *, 割り算 : / (すべて半角))</p>
-    <input type="text" id="operand1">
-    <input type="text" id="opecode">
-    <input type="text" id="operand2">
+    <form action="calculator.php" method="post">
+        <input type="text" id="operand1" name="operand1">
+        <input type="text" id="opecode" name="opecode">
+        <input type="text" id="operand2" name="operand2">
+        <input type="submit" value="送信">
+    </form>
     <button>計算</button>
     <p>計算結果</p>
     <script src="calculator.js"></script>
